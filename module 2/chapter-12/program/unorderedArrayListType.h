@@ -1,0 +1,18 @@
+#ifndef UNORDERED_ARRAY_LIST_TYPE
+#define UNORDERED_ARRAY_LIST_TYPE
+
+#include "arrayListType.h"
+
+class unorderedArrayListType : public arrayListType
+{
+public:
+	void insertAt(int location, int insertItem);
+	void insertEnd(int insertItem);
+	void replaceAt(int location, int repItem);
+	int seqSearch(int searchItem) const;
+	void remove(int removeItem);
+	
+	unorderedArrayListType(int size = 100);
+};
+
+#endif
