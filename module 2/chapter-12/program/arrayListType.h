@@ -12,6 +12,7 @@ public:
 	bool isItemAtEqual(int location, int item) const;
 	virtual void insertAt(int location, int insertItem) = 0;
 	virtual void insertEnd(int insertItem) = 0;
+    virtual int min() = 0;
 	void removeAt(int location);
 	void retrieveAt(int location, int& retItem) const;
 	virtual void replaceAt(int location, int repItem) = 0;

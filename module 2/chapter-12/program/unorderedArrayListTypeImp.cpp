@@ -2,6 +2,7 @@
 #include "unorderedArrayListType.h"
 
 #include <iostream>
+#include <limits.h>
 
 using namespace std;
 
@@ -33,6 +34,23 @@ void unorderedArrayListType::insertEnd(int insertItem)
 		length++;				//increment the length
 	}
 } //end insertEnd
+
+int unorderedArrayListType::min()
+{
+    int smaller = INT_MAX;
+	int length = listSize();
+
+	for(int x = 1; x < length; x++)
+	{
+		if(list[x-1] < smaller)
+		{
+			smaller = list[x - 1];
+		}
+	}
+
+	return smaller;
+    
+}
 
 int unorderedArrayListType::seqSearch(int searchItem) const
 {

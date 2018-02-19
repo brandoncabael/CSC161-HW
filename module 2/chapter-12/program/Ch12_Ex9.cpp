@@ -1,6 +1,7 @@
 //Data:  18 42 78 22 42 5 42 57
 
 #include <iostream>
+#include <cstdlib>
 #include "unorderedArrayListType.h"
 
 using namespace std;
